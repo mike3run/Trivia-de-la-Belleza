@@ -1,0 +1,136 @@
+// Primero reseteamos el pedo
+@import reset
+
+// Luego nos damos backup
+@import bourbon
+
+// Media Query Reusable Mwahaha
+=mediaDesk
+  @media (min-width: 43.75rem) /* 700/16 */
+    @content
+
+=mediaLandscape
+  @media (min-width: 43.75rem), handheld and (orientation: landscape)
+    @content
+
+// Luego un poco de grids
+@import grid
+
+// Colores
+$principal: #2C3E50
+$acento: #4A90E2
+$score: #F5A623
+$pregunta: #fff
+
+::selection
+  color: $pregunta
+  background: $score
+
+// Poner Letra en Lato Regular (400)
+body
+  font-family: 'Lato', 'HelveticaNeue', 'Helvetica', sans-serif
+  line-height: 1.2
+
+// Lato Light las que faltan (400)
+h2, .texto, button, footer p
+  font-weight: 300
+
+
+// Ahora vamos a darle estilo en orden de aparición
+section
+  padding-top: 5%
+  +mediaLandscape
+    padding: 0.625rem /* 10/16 */
+  +mediaDesk
+    padding: 5%
+
+h1
+  font-size: 2.1875em /* 35/16 */
+  color: $principal
+  margin-bottom: 0.75rem /* 12/16 */
+  transition: all 0.5s ease-in-out
+  +mediaLandscape
+    font-size: 1.875em /* 30/16 */
+    margin: 0
+  +mediaDesk
+    font-size: 3.125em /* 50/16 */
+    margin-bottom: 0.75rem /* 12/16 */
+
+h2
+  font-size: 1.25em /* 20/16 */
+  color: $principal
+
+.pregunta
+  font-size: 5em /* 80/16 */
+  color: $acento
+  margin: 10px 0
+  +mediaLandscape
+    font-size: 50px
+
+.texto
+  font-size: 1.375em /* 22/16 */
+  color: $principal
+  margin: 0.9375rem 0 /* 15/16 */
+  +mediaLandscape
+    margin: 0.5rem 0 /* 8/16 */
+  +mediaDesk
+    margin: 0.9375rem 0 /* 15/16 */
+
+button
+  text-decoration: none
+  border-style: none
+  outline: none
+  font-size: 1.3125em /* 21/16 */
+  padding: 8px 50px
+  background: $acento
+  border-radius: 40px
+  width: 100%
+  margin: 5px 0
+  color: $pregunta
+  transition: all 0.5 ease-in-out
+  &:hover
+    background: lighten($acento, 8%)
+  &:active
+    background: lighten($acento, 16%)
+  +mediaDesk
+    max-width: 16em /* 256/16 */
+
+.emoji
+  +hide-text
+  background: url(../img/popo.svg)
+    repeat: no-repeat
+    position: center
+  height: 48px
+  width: 48px
+  margin: 0.9375rem auto /* 15/16 */
+  transition: all 0.5s ease-in-out
+  +mediaLandscape
+    margin: 0.5rem auto /* 8/16 */
+  +mediaDesk
+    margin: 0.9375rem auto /* 15/16 */
+
+.poop
+  background: url(../img/popo.svg)
+    repeat: no-repeat
+    position: center
+
+.score
+  font-size: 1.875em /* 30/16 */
+  color: $score
+  margin: auto
+
+.msg
+  margin-bottom: 20px
+  color: $principal
+
+footer
+  padding-bottom: 5%
+  font-size: 1em /* 16/16 */
+  color: $principal
+  a
+    text-decoration: none
+    color: $acento
+    &:visited
+      color: $acento
+    &:hover
+      color: $score

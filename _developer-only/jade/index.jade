@@ -1,0 +1,22 @@
+doctype html
+html(lang='es')
+    head
+        title Trivia Loca
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='description', content='description')
+        meta(name='keywords', content='keywords')
+        meta(name='author', content='author')
+        meta(name="robots", content="index, follow")
+
+        //- ----- link website ----- //
+        link(rel='icon' href='src/img/favicon.png' type='image/x-icon')
+
+        //- ----- CSS Files ----- //
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,300', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', href='css/belleza.css')
+    body
+        include _trivia.jade
+        
+        //- ----- JS Files ---- //
+        script(type='text/javascript', src='js/trivia.js')

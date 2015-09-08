@@ -1,0 +1,37 @@
+// Media Query Reusable Mwahaha
+=mediaDesk
+  @media (min-width: 43.75rem) /* 800/16 */
+    @content
+
+=mediaLandscape
+  @media (min-width: 43.75rem), handheld and (orientation: landscape) /* 700/16 */
+    @content
+
+// Empezamos desde el contenedor padre
+.contenedor
+  margin: 0 auto
+  padding: 0 5%
+  +mediaDesk
+    width: 33.75rem /* 540/16 */
+
+// Ahora si viene lo pinches bonito
+.fila
+  box-sizing: border-box
+  display: flex
+  flex: 0 1 auto
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: center
+  width: 100%
+  +mediaDesk
+    flex-direction: row
+  &--centrada
+    text-align: center
+
+.half
+  transition: all 0.5 ease-in-out
+  +mediaDesk
+    width: 47.40741%
+    margin-left: 1.296296%
+    margin-right: 1.296296%
+    align-self: center
