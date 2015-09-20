@@ -1,25 +1,24 @@
 // Definamos las variables (primero las de UI)
-  var numero = document.getElementById('pregunta');
-  var texto = document.getElementById('texto');
-  var btn0 = document.getElementById('0');
-  var btn1 = document.getElementById('1');
-  var btn2 = document.getElementById('2');
-  var btn3 = document.getElementById('3');
-  var emoji = document.getElementById('emoji');
-  var score = document.getElementById('score');
-  var msg = document.getElementById("msg");
+  var numero = $('#pregunta');
+  var texto = $('#texto');
+  var btn0 = $('#0');
+  var btn1 = $('#1');
+  var btn2 = $('#2');
+  var btn3 = $('#3');
+  var emoji = $('#emoji');
+  var score = $("#score");
+  var msg = $("#msg");
 
 // Estático el pex
-  numero.innerHTML = "1";
-  texto.innerHTML = "¿Cuál es la pesadilla #25 de Bella Messi?";
-  btn0.innerHTML = "Zapato Mojado";
-  btn1.innerHTML = "Tallar Carro";
-  btn2.innerHTML = "Quebrar Diente";
-  btn3.innerHTML = "Tronar Globo";
-  emoji.addclass("poop");
-  score.innerHTML = "20/100";
-  msg.innerHTML = "¡Hasta un manco podría contestar mejor que tú!";
-
+  numero.html("1");
+  texto.html("¿Cuál es la pesadilla #25 de Bella Messi?");
+  btn0.html("Zapato Mojado");
+  btn1.html("Tallar Carro");
+  btn2.html("Quebrar Diente");
+  btn3.html("Tronar Globo");
+  emoji.addClass("poop");
+  score.html("20/100");
+  msg.html("¡Hasta un manco podría contestar mejor que tú!");
 
 // Vamos a definir una pregunta en general con sus elementos
   function Pregunta(texto, opciones, respuesta) {

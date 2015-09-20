@@ -109,7 +109,7 @@ body {
   font-family: "Lato", "HelveticaNeue", "Helvetica", sans-serif;
   line-height: 1.2; }
 
-h2, .texto, button, footer p {
+h2, #texto, button, footer p {
   font-weight: 300; }
 
 section {
@@ -140,23 +140,23 @@ h2 {
   font-size: 1.25em;
   color: #2C3E50; }
 
-.pregunta {
+#pregunta {
   font-size: 5em;
   color: #4A90E2;
   margin: 10px 0; }
   @media (min-width: 43.75rem), handheld and (orientation: landscape) {
-    .pregunta {
+    #pregunta {
       font-size: 50px; } }
 
-.texto {
+#texto {
   font-size: 1.375em;
   color: #2C3E50;
   margin: 0.9375rem 0; }
   @media (min-width: 43.75rem), handheld and (orientation: landscape) {
-    .texto {
+    #texto {
       margin: 0.5rem 0; } }
   @media (min-width: 43.75rem) {
-    .texto {
+    #texto {
       margin: 0.9375rem 0; } }
 
 button {
@@ -184,9 +184,6 @@ button {
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
-  background: url(../img/popo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
   height: 48px;
   width: 48px;
   margin: 0.9375rem auto;

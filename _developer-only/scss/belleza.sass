@@ -32,7 +32,7 @@ body
   line-height: 1.2
 
 // Lato Light las que faltan (400)
-h2, .texto, button, footer p
+h2, #texto, button, footer p
   font-weight: 300
 
 
@@ -60,14 +60,14 @@ h2
   font-size: 1.25em /* 20/16 */
   color: $principal
 
-.pregunta
+#pregunta
   font-size: 5em /* 80/16 */
   color: $acento
   margin: 10px 0
   +mediaLandscape
     font-size: 50px
 
-.texto
+#texto
   font-size: 1.375em /* 22/16 */
   color: $principal
   margin: 0.9375rem 0 /* 15/16 */
@@ -97,9 +97,6 @@ button
 
 #emoji
   +hide-text
-  background: url(../img/popo.svg)
-    repeat: no-repeat
-    position: center
   height: 48px
   width: 48px
   margin: 0.9375rem auto /* 15/16 */
