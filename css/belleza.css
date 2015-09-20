@@ -180,7 +180,7 @@ button {
     button {
       max-width: 16em; } }
 
-.emoji {
+#emoji {
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
@@ -193,10 +193,10 @@ button {
   -webkit-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out; }
   @media (min-width: 43.75rem), handheld and (orientation: landscape) {
-    .emoji {
+    #emoji {
       margin: 0.5rem auto; } }
   @media (min-width: 43.75rem) {
-    .emoji {
+    #emoji {
       margin: 0.9375rem auto; } }
 
 .poop {
@@ -204,12 +204,12 @@ button {
     background-repeat: no-repeat;
     background-position: center; }
 
-.score {
+#score {
   font-size: 1.875em;
   color: #F5A623;
   margin: auto; }
 
-.msg {
+#msg {
   margin-bottom: 20px;
   color: #2C3E50; }
 

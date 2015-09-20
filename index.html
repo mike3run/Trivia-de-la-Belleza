@@ -8,7 +8,8 @@
     <meta name="keywords" content="keywords">
     <meta name="author" content="author">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="src/img/favicon.png" type="image/x-icon">
+    <link href="img(favicon.ico)">
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/belleza.css">
   </head>
@@ -22,41 +23,37 @@
           <h2>Contesta y gana</h2>
         </div>
         <div class="fila fila--centrada">
-          <h3 class="pregunta">01</h3>
+          <h3 id="pregunta" class="pregunta"></h3>
         </div>
         <div class="fila fila--centrada">
-          <p class="texto">¿Cuál es la pesadilla #25 de Bella Messi?</p>
+          <p id="texto" class="texto"></p>
         </div>
         <div class="fila">
           <div class="half">
-            <button id="1">Zapato Mojado</button>
+            <button id="0"></button>
           </div>
           <div class="half">
-            <button id="2">Tallar Carro</button>
+            <button id="1"></button>
           </div>
         </div>
         <div class="fila">
           <div class="half">
-            <button id="3">Quebrar Diente</button>
+            <button id="2"></button>
           </div>
           <div class="half">
-            <button id="4">Tronar Globo</button>
+            <button id="3"></button>
           </div>
         </div>
         <div class="fila">
-          <div class="emoji poop">
+          <div id="emoji">
             <p>Emoji</p>
           </div>
         </div>
         <div class="fila">
-          <div class="score">
-            <p>20/100</p>
-          </div>
+          <p id="score"></p>
         </div>
         <div class="fila fila--centrada">
-          <div class="msg">
-            <p>¡Hasta un manco podría contestar mejor que tú!</p>
-          </div>
+          <p id="msg"></p>
         </div>
       </div>
     </section>
@@ -67,6 +64,7 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/trivia.js"></script>
   </body>
 </html>

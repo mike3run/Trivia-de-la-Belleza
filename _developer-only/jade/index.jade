@@ -10,7 +10,8 @@ html(lang='es')
         meta(name="robots", content="index, follow")
 
         //- ----- link website ----- //
-        link(rel='icon' href='src/img/favicon.png' type='image/x-icon')
+        link(rel=icon, href="img(favicon.ico)")
+        link(rel='icon', href='img/favicon.png', type='image/png')
 
         //- ----- CSS Files ----- //
         link(href='https://fonts.googleapis.com/css?family=Lato:400,300', rel='stylesheet', type='text/css')
@@ -19,4 +20,5 @@ html(lang='es')
         include _trivia.jade
         
         //- ----- JS Files ---- //
+        script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
         script(type='text/javascript', src='js/trivia.js')
