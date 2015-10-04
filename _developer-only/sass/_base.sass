@@ -1,0 +1,61 @@
+// Librería bourbon
+@import "bourbon"
+
+// Reset situacional
+@import "reset"
+
+// El box-sizing
+*
+  box-sizing: border-box
+
+// Darle estilo a las letras
+body
+  color: $principal
+  font:
+    family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+    weight: 300
+    size: 16px
+
+h1
+  font-family: "HelveticaNeue-Medium", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  font-size: 2.1875em /* 35/16 */
+  line-height: 2.6875em /* 43/16 */
+
+ul
+  font-size: 1.5625em /* 25/16 */
+  line-height: 38px
+  margin-bottom: 20px
+
+button
+  text-decoration: none
+  border-style: none
+  outline: none
+  font-size: 1.5625em /* 25/16 */
+  padding: 8px 50px
+  background: $acento
+  border-radius: 40px
+  width: 100%
+  margin: 5px 0px
+  color: $pregunta
+  transition: width 0.5s ease-in-out
+  &:hover
+    background: lighten($acento, 8%)
+  &:active
+    background: lighten($acento, 16%)
+
+  @media (min-width: 420px)
+    width: 340px
+    margin: 5px auto
+
+footer
+  padding-bottom: 5%
+  font-size: 1.25em /* 20/16 */
+  color: $principal
+  text-align: center
+  a
+    text-decoration: none
+    color: $acento
+    &:visited
+      color: $acento
+    &:hover
+      color: $score
