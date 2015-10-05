@@ -1,42 +1,41 @@
-// Programamos la UI
-function rellenaIDconMueble(ID, mueble) {
-  var elemento = this.getElementById(ID);
-  elemento.innerHTML = mueble;
-}
+var canvas = document.getElementById("trivia");
+var startPoint = "<h1>Trivia</h1>";
+startPoint+= "<h2 id='numeroPreguntaActual'></h2>";
+startPoint+="<p id='texto'></p>";
+startPoint+="<button id='0'></button>";
+startPoint+="<button id='1'></button>";
+startPoint+="<button id='2'></button>";
+startPoint+="<button id='3'></button>";
+startPoint+="<div id='emoji' class=''></div>";
+startPoint+="<p id='score'></p>";
+startPoint+="<p id='mensaje'></p>";
+
+
 var QuizUI = {
-  inicio : function() {
-    var startButton = document.getElementById("inicio");
+  start : function () {
+    var startButton = document.getElementById("startButton");
     startButton.onclick = function() {
-      rellenaIDconMueble("test", "<p>Estuvo bonito</p>");
+      canvas.innerHTML = startPoint;
+      QuizUI.mostrarPregunta();
     };
   },
-  muestraSiguiente : function () {
-      if (trivia.fin() ) {
-        this.muestraFrase();
-      } else {
-        this.muestraPregunta();
-        this.muestraOpciones();
-        this.muestraProgreso();
-      }
-  },
-  muestraFrase : function() {
-    // Algo chingón jaja
-  },
-  muestraPregunta : function() {
-    this.rellenaIDconMueble("texto", trivia.saberPreguntaActual().text);
-  },
-  muestraOpciones : function() {
-    var opciones = quiz.saberPreguntaActual().opciones;
-    for (var i = 0; i > opciones.length; i++) {
-        this.rellenaIDconMueble(i, opciones[i]);
-        this.checarRespuesta(i,opciones[i]);
+  mostrarPregunta : function() {
+    this.reemplazaIDporMueble("numeroPreguntaActual", trivia.numeroPreguntaActual + 1);
+    this.reemplazaIDporMueble( "texto", trivia.saberPregunta().texto );
+    var opciones = trivia.saberPregunta().opciones;
+    for (var i = 0; i < opciones.length; i++) {
+      this.reemplazaIDporMueble(i, opciones[i]);
     }
   },
-  checarRespuesta : function(ID, respuesta) {
-    var boton = document.getElementById(ID);
-    boton.onclick = function() {
-      trivia.adivinar(respuesta);
-      QuizUI.muestraSiguiente();
-    };
+  reemplazaIDporMueble : function(id, mueble) {
+    var elemento = document.getElementById(id);
+    elemento.innerHTML = mueble;
+  },
+  cambiarEmoji : function (emojiQueCambiara) {
+    var emoji = document.getElementById("emoji");
+    emoji.className = emojiQueCambiara;
+  },
+  emojiControl : function () {
+    // Algo aún no definido
   }
 };

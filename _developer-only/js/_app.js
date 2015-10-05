@@ -1,22 +1,27 @@
-// Vamos a hacer el esqueleto de la trivia
-    function Trivia(preguntas) {
-      this.score = 0;
-      this.preguntas = preguntas;
-      this.indexActual = 0;
-      this.scoreIncrementar = this.preguntas / 100;
-    }
+// Primero vamos a definir lo que hace a una trivia ser una trivia
+function Trivia (preguntas) {
+  this.score                  = 0;
+  this.numeroPreguntaActual   = 0;
+  this.preguntas              = preguntas;
+  this.incrementoScore        = 100/preguntas.length;
+}
 
-    Trivia.prototype.adivinar = function (seleccion) {
-      if (this.saberPreguntaActual().esCorrecta(seleccion)) {
-        this.score +=this.scoreIncrementar;
-      }
-      this.indexActual++;
-    };
+// Ahora vamos a hacer una serie de funciones para ir pensando que pasa cuando pase :)
+// Saber que pregunta toca. Entramos a las preguntas y al accesar
+Trivia.prototype.saberPregunta = function() {
+  return this.preguntas[this.numeroPreguntaActual];
+};
 
-    Trivia.prototype.saberPreguntaActual = function () {
-      return this.preguntas[this.indexActual];
-    };
+// Vamos a aumentar nuestro score si atinamos o nada si no y subimos el indice actual.
+Trivia.prototype.adivinar = function(seleccion) {
+  if(this.saberPregunta().esCorrecta(seleccion) ) {
+    this.score+= this.incrementoScore;
+  }
+  this.numeroPreguntaActual++;
+};
 
-    Trivia.prototype.fin = function(){
-      return this.indexActual >= this.preguntas.length;
-    };
+// Y ahora una función para revisar si ya se acabaron las preguntas mu.
+// Basicamente es un verdadero/falso de si ya se acabó para usarlo en otro lado
+Trivia.prototype.noMasPreguntas = function() {
+  return this.numeroPreguntaActual >= this.preguntas.length;
+};
