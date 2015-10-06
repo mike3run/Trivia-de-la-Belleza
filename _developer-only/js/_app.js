@@ -3,7 +3,7 @@ function Trivia (preguntas) {
   this.score                  = 0;
   this.numeroPreguntaActual   = 0;
   this.preguntas              = preguntas;
-  this.incrementoScore        = 100/preguntas.length;
+  this.incrementoScore        = Math.floor(100/preguntas.length);
 }
 
 // Ahora vamos a hacer una serie de funciones para ir pensando que pasa cuando pase :)

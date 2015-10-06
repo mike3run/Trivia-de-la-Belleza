@@ -10,6 +10,11 @@ startPoint+="<div id='emoji' class=''></div>";
 startPoint+="<p id='score'></p>";
 startPoint+="<p id='mensaje'></p>";
 
+var gameOver = "<h1>Game Over</h1>";
+gameOver += "<div id='emoji' class=''></div>";
+gameOver+="<p id='score'></p>";
+gameOver+="<p id='mensaje'></p>";
+
 
 var QuizUI = {
   start : function () {
@@ -20,11 +25,21 @@ var QuizUI = {
     };
   },
   mostrarPregunta : function() {
-    this.reemplazaIDporMueble("numeroPreguntaActual", trivia.numeroPreguntaActual + 1);
-    this.reemplazaIDporMueble( "texto", trivia.saberPregunta().texto );
-    var opciones = trivia.saberPregunta().opciones;
-    for (var i = 0; i < opciones.length; i++) {
-      this.reemplazaIDporMueble(i, opciones[i]);
+    if (trivia.noMasPreguntas() ) {
+    // El final de todo
+    canvas.innerHTML = gameOver;
+    this.emojiControl();
+    this.reemplazaIDporMueble("score", trivia.score + "/100");
+    } else {
+      this.reemplazaIDporMueble("numeroPreguntaActual", "0" + (trivia.numeroPreguntaActual + 1));
+      this.reemplazaIDporMueble( "texto", trivia.saberPregunta().texto );
+      this.emojiControl();
+      this.reemplazaIDporMueble("score", trivia.score + "/100");
+      var opciones = trivia.saberPregunta().opciones;
+      for (var i = 0; i < opciones.length; i++) {
+        this.reemplazaIDporMueble(i, opciones[i]);
+        this.seleccionControl(i, opciones[i]);
+      }
     }
   },
   reemplazaIDporMueble : function(id, mueble) {
@@ -33,9 +48,45 @@ var QuizUI = {
   },
   cambiarEmoji : function (emojiQueCambiara) {
     var emoji = document.getElementById("emoji");
+    var favicon = document.getElementById("favicon");
     emoji.className = emojiQueCambiara;
+    favicon.setAttribute("href", "img/" + emojiQueCambiara +".png");
   },
   emojiControl : function () {
-    // Algo aún no definido
+    if (trivia.score >= 0 && trivia.score < 10) {
+      this.cambiarEmoji("poop");
+      this.reemplazaIDporMueble("mensaje", "Esfuerzate más");
+    } else if (trivia.score >= 10 && trivia.score < 20) {
+      this.cambiarEmoji("desesperado");
+      this.reemplazaIDporMueble("mensaje", "No traes nada");
+    }else if (trivia.score >= 20 && trivia.score < 30) {
+      this.cambiarEmoji("moco");
+      this.reemplazaIDporMueble("mensaje", "Por favor…");
+    }else if (trivia.score >= 30 && trivia.score < 40) {
+      this.cambiarEmoji("decepcion");
+      this.reemplazaIDporMueble("mensaje", "Me decepcionas");
+    }else if (trivia.score >= 40 && trivia.score < 50) {
+      this.cambiarEmoji("neutral");
+      this.reemplazaIDporMueble("mensaje", "Meh");
+    }else if (trivia.score >= 50 && trivia.score < 60) {
+      this.cambiarEmoji("pxndx");
+      this.reemplazaIDporMueble("mensaje", "Pxndx en general");
+    }else if (trivia.score >= 60 && trivia.score < 70) {
+      this.cambiarEmoji("happy");
+      this.reemplazaIDporMueble("mensaje", "Te ves bien");
+    }else if (trivia.score >= 70 && trivia.score < 80) {
+      this.cambiarEmoji("grin");
+      this.reemplazaIDporMueble("mensaje", "Eres muy bueno!");
+    }else if (trivia.score >= 80) {
+      this.cambiarEmoji("boss");
+      this.reemplazaIDporMueble("mensaje", "¡Eres el amo del universo!");
+    }
+  },
+  seleccionControl : function(id, seleccion) {
+    var boton = document.getElementById(id);
+    boton.onclick = function() {
+        trivia.adivinar(seleccion);
+        QuizUI.mostrarPregunta();
+    };
   }
 };

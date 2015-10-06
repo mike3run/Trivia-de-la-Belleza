@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="46px" viewBox="0 0 44 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>pxndx</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,47.5 L47.5,47.5 L47.5,0 L0,0 L0,47.5 L0,47.5 Z"></path>
+    </defs>
+    <g id="Trivia" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Assets" sketch:type="MSArtboardGroup" transform="translate(-459.000000, -24.000000)">
+            <g id="pxndx" sketch:type="MSLayerGroup" transform="translate(457.250000, 23.000000)">
+                <g id="g10" transform="translate(23.750000, 23.750000) scale(1, -1) translate(-23.750000, -23.750000) ">
+                    <g id="g12">
+                        <g id="g14-Clipped">
+                            <mask id="mask-2" sketch:name="path18" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="path18"></g>
+                            <g id="g14" mask="url(#mask-2)">
+                                <g transform="translate(2.500000, 1.250000)">
+                                    <g id="g20" transform="translate(0.000000, 30.000000)">
+                                        <path d="M15,7.5 C15,3.35875 11.64125,0 7.5,0 C3.35875,0 0,3.35875 0,7.5 C0,11.64125 3.35875,15 7.5,15 C11.64125,15 15,11.64125 15,7.5" id="path22" fill="#272B2B" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g24" transform="translate(27.500000, 30.000000)">
+                                        <path d="M15,7.5 C15,3.35875 11.64125,0 7.5,0 C3.35875,0 0,3.35875 0,7.5 C0,11.64125 3.35875,15 7.5,15 C11.64125,15 15,11.64125 15,7.5" id="path26" fill="#272B2B" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g28" transform="translate(2.500000, 32.500000)">
+                                        <path d="M10,5 C10,2.23875 7.76125,0 5,0 C2.23875,0 0,2.23875 0,5 C0,7.76125 2.23875,10 5,10 C7.76125,10 10,7.76125 10,5" id="path30" fill="#66757F" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g32" transform="translate(30.000000, 32.500000)">
+                                        <path d="M10,5 C10,2.23875 7.76125,0 5,0 C2.23875,0 0,2.23875 0,5 C0,7.76125 2.23875,10 5,10 C7.76125,10 10,7.76125 10,5" id="path34" fill="#66757F" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g36" transform="translate(0.000000, 2.500000)">
+                                        <path d="M42.5,15 C42.5,6.25 34.53125,0 21.25,0 C7.96875,0 0,6.25 0,15 C0,15 1.635,42.5 21.25,42.5 C40.865,42.5 42.5,15 42.5,15" id="path38" fill="#EEEEEE" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g40" transform="translate(13.750000, 0.000000)">
+                                        <path d="M15,7.5 C15,3.35875 11.64125,0 7.5,0 C3.35875,0 0,3.35875 0,7.5 C0,11.64125 3.35875,15 7.5,15 C11.64125,15 15,11.64125 15,7.5" id="path42" fill="#CCD6DD" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g44" transform="translate(16.250000, 2.500000)">
+                                        <path d="M10,5 C10,2.23875 7.76125,0 5,0 C2.23875,0 0,2.23875 0,5 C0,7.76125 2.23875,10 5,10 C7.76125,10 10,7.76125 10,5" id="path46" fill="#DD2E44" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g48" transform="translate(22.136250, 12.932125)">
+                                        <path d="M2.5,16.25 C8.0675,19.72 16.61375,10.8175 10.30375,3.73 C5.9425,-1.17125 1.61375,0.8175 1.61375,0.8175 C1.61375,0.8175 -1.68125,13.64375 2.5,16.25" id="path50" fill="#272B2B" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g52" transform="translate(6.583250, 12.919250)">
+                                        <path d="M11.25,16.25 C5.6825,19.72 -2.86375,10.8175 3.445,3.73 C7.8075,-1.17 12.13625,0.81875 12.13625,0.81875 C12.13625,0.81875 15.43125,13.64375 11.25,16.25" id="path54" fill="#272B2B" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g56" transform="translate(12.500000, 18.750000)">
+                                        <path d="M0,5 C0,5 0,7.5 2.5,7.5 C5,7.5 5,5 5,5 L5,2.5 C5,2.5 5,0 2.5,0 C0,0 0,2.5 0,2.5 L0,5 L0,5 Z" id="path58" fill="#66757F" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g60" transform="translate(7.500000, 3.750000)">
+                                        <path d="M13.75,16.25 C13.75,16.25 0,11.64125 0,7.5 C0,3.35875 3.35875,0 7.5,0 C10.11,0 12.40625,1.33375 13.75,3.3575 C15.0925,1.33375 17.39,0 20,0 C24.14125,0 27.5,3.35875 27.5,7.5 C27.5,11.64125 13.75,16.25 13.75,16.25" id="path62" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g64" transform="translate(25.000000, 18.750000)">
+                                        <path d="M0,5 C0,5 0,7.5 2.5,7.5 C5,7.5 5,5 5,5 L5,2.5 C5,2.5 5,0 2.5,0 C0,0 0,2.5 0,2.5 L0,5 L0,5 Z" id="path66" fill="#66757F" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                    <g id="g68" transform="translate(13.906875, 8.750000)">
+                                        <path d="M1.25,5 C-0.78125,3.75 5.3125,0 7.34375,0 C9.375,0 15.4675,3.75 13.43625,5 C11.405,6.25 3.28125,6.25 1.25,5" id="path70" fill="#272B2B" sketch:type="MSShapeGroup"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
